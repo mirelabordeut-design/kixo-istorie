@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KIXO • Olimpiada de Istorie</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="brand">KIXO EDUCATIONAL • OLIMPIADA DE ISTORIE</div>
+<h1>Învățare pas cu pas + chestionare cu feedback</h1>
+<div class="sub">Algoritmul Lecției 10 este păstrat integral, fără schimbarea ordinii sau a denumirii etapelor.</div>
+<div class="alg"><span>ENUNȚ</span><span>CE ȘTIU?</span><span>CE CAUT?</span><span>OBSERV</span><span>ALEG REGULA</span><span>APLIC</span><span>CALCULEZ</span><span>VERIFIC</span><span>CONCLUZIE</span></div>
+</header>
+<nav>
+<button class="tab active" data-view="learn">Material de învățare</button>
+<button class="tab" data-view="quiz">Chestionare</button>
+<button class="tab" data-view="method">Cum folosim algoritmul</button>
+</nav>
+<main>
+<section id="learn"></section>
+<section id="quiz" class="hidden">
+<div class="card">
+<h2>Chestionare pentru olimpiadă</h2>
+<p>Fiecare întrebare are <b>un singur răspuns corect</b>. După alegere primești imediat explicația argumentată. La răspuns greșit este afișată varianta corectă și motivarea.</p>
+<div id="quizControls" class="controls">
+<select id="unitSel"><option value="all">Toate unitățile</option><option value="1">1. Revoluția din 1821 și drumul spre modernizare</option><option value="2">2. Revoluția română de la 1848</option><option value="3">3. Unirea Principatelor și domnia lui Alexandru Ioan Cuza</option><option value="4">4. Carol I, independența și România 1878–1914</option><option value="5">5. Pământuri românești sub stăpânire străină</option></select>
+<select id="levelSel"><option value="Ușor">Ușor</option><option value="Mediu">Mediu</option><option value="Olimpiadă">Olimpiadă</option><option value="Mix">Mix</option></select>
+<select id="countSel"><option value="5">5 întrebări</option><option value="10" selected>10 întrebări</option><option value="15">15 întrebări</option><option value="20">20 întrebări</option></select>
+<button class="primary" id="startBtn">Pornește chestionarul</button>
+</div>
+<div id="quizArea" class="hidden">
+<div class="score" id="score"></div>
+<div class="small" id="meta"></div>
+<div class="qbox" id="qtext"></div>
+<div class="opts" id="opts"></div>
+<div class="feedback" id="feedback"></div>
+<button class="primary hidden" id="nextBtn" style="margin-top:14px">Următoarea întrebare</button>
+</div>
+</div>
+</section>
+<section id="method" class="hidden">
+<div class="card">
+<h2>Algoritmul – neschimbat</h2>
+<p><b>ENUNȚ → CE ȘTIU? → CE CAUT? → OBSERV → ALEG REGULA → APLIC → CALCULEZ → VERIFIC → CONCLUZIE</b></p>
+<p>În istorie, denumirile rămân exact cele din Lecția 10. Doar sensul practic al unor pași se adaptează disciplinei: la <b>CALCULEZ</b>, elevul ordonează cronologia, compară date și construiește relații cauză–efect; la <b>VERIFIC</b>, verifică dacă numele, documentul, locul, data și consecința sunt corect asociate.</p>
+<div class="support"><span>ÎMPREUNĂ</span><span>ACUM TU</span><span>POȚI SINGUR</span></div>
+<p><b>ÎMPREUNĂ</b>: copilul citește explicația completă. <b>ACUM TU</b>: răspunde cu harta cronologică la vedere. <b>POȚI SINGUR</b>: rezolvă chestionarul fără suport și justifică oral răspunsul.</p>
+</div>
+</section>
+</main>
+<script src="modules.js"></script>
+<script src="q0.js"></script>
+<script src="q1.js"></script>
+<script src="q2.js"></script>
+<script src="q3.js"></script>
+<script src="app.js"></script>
+</body></html>
